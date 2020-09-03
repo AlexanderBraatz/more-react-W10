@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+//import "./ajax"; // axios with configuration , imported here so ajax.js is run in the app for W10 09-api ajax challenges, showing its results in the console.
 
 ReactDOM.render(
   <React.StrictMode>
