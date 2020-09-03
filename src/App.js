@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Squares from './components/Squares/Squares';
 import SignUp from './components/SignUp/SignUp';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -8,6 +7,7 @@ import Articles from './news/Articles';
 import Article from './news/Article';
 import CreateArticle from './news/CreateArticle';
 import FourOhFour from './news/FourOhFour';
+import Footer from './news/Footer';
 
   
 
@@ -36,9 +36,10 @@ function App() {
               <Squares colour= "hotpink" />
               <SignUp minimumLength= { 12 } />
             </Route>
-            
+
             <FourOhFour/>
           </Switch>
+          <Footer />
 
       </Router>
     </div>
