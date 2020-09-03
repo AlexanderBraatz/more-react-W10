@@ -29,7 +29,7 @@ class Articles extends Component {
             <ul
             className="list-group">
                 { articles.map(( article )=> (
-                    <li className="list-group-item" key={ article.id }>
+                    <li className="list-group-item list-group-item-action" key={ article.id }>
                         <Link to={`/news/${article.id}`} className="float-left text-primary" >
                             { article.title }
                         </Link>

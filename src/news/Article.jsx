@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "../axios";
 import Tags from "./Tags";
 import Loading from "./Loading";
+import Comments from "./Comments";
 
 class Article extends Component {
     constructor(props) {
@@ -25,15 +26,18 @@ class Article extends Component {
     }
     render(){
         let { loaded, article } = this.state;
-        let { title, content } = article;
+        let { title, content, id } = article;
 
         return( !loaded ? <Loading /> :
+            <>
             <article>
                 <h2>{ title }</h2>
                 <p>{ content }</p>
-                <Tags article={ article } />    
+                <Tags article={ article } /> 
             </article>
-
+            <br></br>
+                <Comments articleID={ id } />   
+            </>
         );
     }
 }
