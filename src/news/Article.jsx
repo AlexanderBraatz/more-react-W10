@@ -3,6 +3,7 @@ import axios from "../axios";
 import Tags from "./Tags";
 import Loading from "./Loading";
 import Comments from "./Comments";
+import CreateComment from "./CreateComment";
 
 class Article extends Component {
     constructor(props) {
@@ -36,7 +37,8 @@ class Article extends Component {
                 <Tags article={ article } /> 
             </article>
             <br></br>
-                <Comments articleID={ id } />   
+                <Comments articleID={ id } />
+                <CreateComment articleID={ id } />
             </>
         );
     }

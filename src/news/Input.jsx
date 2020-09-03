@@ -9,7 +9,6 @@ const Input = ({ value, title, handleChange, id}) =>(
             type="text" 
             className="form-control" 
             id={ id }
-            placeholder={`Please add the ${ title } here`}
             aria-describedby={ title } />
     </div>
 );

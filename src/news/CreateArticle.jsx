@@ -65,8 +65,8 @@ class Article extends Component {
                 <form>
                     <Input title="Title" handleChange={ this.handleChangeTitle } value={ title } id="title" />
                     <Input title="Article" handleChange={ this.handleChangeContent } value={ content }  id="article"  />
-                    <Input title="Tags" handleChange={ this.handleChangeTags } value={ tags } />
-                    <Button name="Create" handleSubmit={ this.handleSubmit }  id="tags" />
+                    <Input title="Tags" handleChange={ this.handleChangeTags } value={ tags } id="tags" />
+                    <Button name="Create" handleSubmit={ this.handleSubmit } />
                 </form>
             </>
         );
